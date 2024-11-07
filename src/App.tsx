@@ -1,10 +1,9 @@
-import { Route, Routes } from 'react-router-dom'
-import { Lifegame } from '@src/lifegame/Lifegame'
+import { Routes } from 'react-router-dom'
 
 function App() {
   return (
     <Routes>
-      <Route path="/lifegame" element={<Lifegame />} />
+      
     </Routes>
   );
 }
