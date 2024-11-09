@@ -5,8 +5,7 @@ export function AboutMe() {
         <Paper>
             <section>
                 <DetailList>
-                    <Detail>
-                        <h2 css={{ fontWeight: 'bold', }}>自己紹介</h2>
+                    <Detail title={<h2 css={{ fontWeight: 'bold', }}>自己紹介</h2>}>
                         <p>おもち</p>
                     </Detail>
                 </DetailList>

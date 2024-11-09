@@ -5,8 +5,7 @@ export function SnsLinks() {
         <Paper>
             <section>
                 <DetailList>
-                    <Detail>
-                        <h2 css={{ fontWeight: 'bold', }}>各SNSへのリンク</h2>
+                    <Detail title={<h2 css={{ fontWeight: 'bold', }}>各SNSへのリンク</h2>}>
                         <p>おもち</p>
                     </Detail>
                 </DetailList>

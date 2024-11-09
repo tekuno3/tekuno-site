@@ -5,8 +5,7 @@ export function ContentLinks() {
         <Paper>
             <section>
                 <DetailList>
-                    <Detail>
-                        <h2 css={{ fontWeight: 'bold', }}>コンテンツ</h2>
+                    <Detail title={<h2 css={{ fontWeight: 'bold', }}>コンテンツ</h2>}>
                         <p>おもち</p>
                     </Detail>
                 </DetailList>
