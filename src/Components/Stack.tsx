@@ -7,10 +7,6 @@ export interface StackProps extends ComponentPropsWithoutRef<'div'> {
     spacing?: number | string,
 }
 
-export const stackClasses = {
-    root: 'stack-root',
-}
-
 export function Stack({
     children,
     direction = 'vertical',
@@ -30,7 +26,6 @@ export function Stack({
 
     return (
         <div
-            className={stackClasses.root}
             css={{
                 display: 'flex',
                 flexDirection: flexDirection,
