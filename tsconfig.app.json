@@ -23,7 +23,6 @@
     /* Aliases */
     "paths": {
       "@src/*": ["./src/*"],
-      "@Components/*": ["./src/Components/*"],
     }
   },
   "include": ["src"]

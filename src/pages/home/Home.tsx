@@ -1,4 +1,4 @@
-import { Stack } from "@src/Components/Stack";
+import { Stack } from "@src/components/Stack";
 
 export interface HomeProps {
 
