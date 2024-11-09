@@ -32,7 +32,7 @@ export function Home({ }: HomeProps) {
             </Paper>
             <Paper css={{ position: 'relative', }}>
                 <img
-                    src={`/images/home/${shownIcon}`}
+                    src={`/images/home/mes/${shownIcon}`}
                     css={{
                         display: 'block',
                         height: '300px',
