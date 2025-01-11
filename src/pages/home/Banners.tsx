@@ -1,26 +1,30 @@
-import { Paper, DetailList, Detail } from "@src/components";
+import { Paper, DetailList, Detail, Stack, Anchor } from "@src/components";
 
 export function Banners() {
     const bannerInfo = [
         {
-            file: 'banner.png',
-            title: 'てく野のサイト',
             description: 'このサイトのバナーです',
+            file: 'banner.png',
+            link: '#',
+            title: 'てく野のサイト',
         },
         {
-            file: 'banner_100health.gif',
-            title: '100%health',
             description: 'yuinoidさんのサイトです',
+            file: 'banner_100health.gif',
+            link: 'https://yuinoid.neocities.org/',
+            title: '100%health',
         },
         {
-            file: 'banner_little_girl_float_in.png',
-            title: 'little-girl-float.in',
             description: '蝉暮せせせさんのサイトです',
+            file: 'banner_little_girl_float_in.png',
+            link: 'https://little-girl-float.in/',
+            title: 'little-girl-float.in',
         },
         {
-            file: 'dokozonodot.gif',
-            title: 'どこぞのドット打ちのWeb',
             description: 'よしなに。さんのサイトです',
+            file: 'dokozonodot.gif',
+            link: 'https://www.deepblue3000dot.com/index.html',
+            title: 'どこぞのドット打ちのWeb',
         },
     ];
 
@@ -29,14 +33,18 @@ export function Banners() {
             <section>
                 <DetailList>
                     <Detail title={<h2 css={{ fontWeight: 'bold', }}>リンク・バナー</h2>}>
-                        <DetailList>
-                            {bannerInfo.map(({ description, file, title }, i) => (
-                                <Detail key={i} title={<p>{title}</p>}>
-                                    <img src={`/images/home/banners/${file}`} alt={title} />
-                                    <p>{description}</p>
-                                </Detail>
+                        <Stack spacing="12px">
+                            {bannerInfo.map(({ description, file, link, title }, i) => (
+                                <DetailList key={i}>
+                                    <Detail title={<p>{title}</p>}>
+                                        <Anchor href={link} target={link === '#' ? undefined : '_blank'}>
+                                            <img src={`/images/home/banners/${file}`} alt={title} />
+                                        </Anchor>
+                                        <p>{description}</p>
+                                    </Detail>
+                                </DetailList>
                             ))}
-                        </DetailList>
+                        </Stack>
                     </Detail>
                 </DetailList>
             </section>

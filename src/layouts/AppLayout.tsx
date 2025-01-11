@@ -15,11 +15,10 @@ export function AppLayout() {
             <div css={t => ({
                 boxSizing: 'border-box',
                 fontFamily: t.fonts.fontFamily.primary,
-                height: '100%',
                 marginLeft: 'auto',
                 marginRight: 'auto',
                 maxWidth: '600px',
-                padding: '8px 0',
+                padding: '16px 0',
                 [`@media (max-width: ${breakPoints.mobile})`]: {
                     paddingLeft: '4px',
                     paddingRight: '4px',

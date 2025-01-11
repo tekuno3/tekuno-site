@@ -1,15 +1,18 @@
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentProps, ElementType, PropsWithChildren } from "react";
 
-export interface PaperProps extends ComponentPropsWithoutRef<'div'> {
+export type PaperProps<T extends ElementType = 'div'> = {
+    as?: ElementType<T>,
+} & ComponentProps<T>
 
-}
-
-export function Paper({
+export function Paper<T extends ElementType = 'div'>({
+    as = 'div',
     children,
     ...rest
-}: PaperProps) {
+}: PropsWithChildren<PaperProps<T>>) {
+    const Element = as; // FIX-ME: any
+
     return (
-        <div
+        <Element
             css={t => ({
                 backgroundColor: t.colors.fg,
                 borderImage: 'url(/images/border_transparent.png)',
@@ -23,6 +26,6 @@ export function Paper({
             {...rest}
         >
             {children}
-        </div>
+        </Element>
     );
 }
