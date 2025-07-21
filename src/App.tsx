@@ -1,14 +1,11 @@
-import '@unocss/reset/eric-meyer.css'
-import { AppRoutes } from '@src/routes/AppRoutes';
-import { ThemeProvider } from '@emotion/react';
-import { defaultTheme } from './themes/themes';
+import '@unocss/reset/eric-meyer.css';
 
 function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <AppRoutes />
-    </ThemeProvider>
+    <div>
+      App
+    </div>
   );
 }
 
-export default App
+export default App;

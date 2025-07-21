@@ -1,5 +1,0 @@
-export * from "./Detail"
-export * from "./DetailList"
-export * from "./Paper"
-export * from "./Stack"
-export * from "./Anchor"

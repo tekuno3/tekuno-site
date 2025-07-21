@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
+    "jsxImportSource": "react",
     "noImplicitAny": true,
-    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true
   },
   "files": [],
   "references": [
