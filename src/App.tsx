@@ -1,10 +1,10 @@
-import '@unocss/reset/eric-meyer.css';
-
 function App() {
   return (
-    <div className="bg-gray-200" >
-      App2
-    </div>
+    <section className="p-2" >
+      <h1 className="font-bold" >
+        作成中
+      </h1>
+    </section>
   );
 }
 
