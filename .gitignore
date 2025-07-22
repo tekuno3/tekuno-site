@@ -1,0 +1,4 @@
+node_modules
+.devcontainer/setup.sh
+.vscode/*
+!.vscode/extensions.json
