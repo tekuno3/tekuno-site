@@ -2,8 +2,8 @@ import '@unocss/reset/eric-meyer.css';
 
 function App() {
   return (
-    <div>
-      App
+    <div className="bg-gray-200" >
+      App2
     </div>
   );
 }

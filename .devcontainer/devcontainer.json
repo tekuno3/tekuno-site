@@ -16,5 +16,12 @@
   ],
   "onCreateCommand": "npm install && npm install -D",
   "overrideCommand": true,
-  "postCreateCommand": "sh ./.devcontainer/setup.sh"
+  "postCreateCommand": "sh ./.devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
