@@ -6,7 +6,7 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var Jv;function Md(){if(Jv)return oe;Jv=1;var D=Symbol.for("react.transitional.element"),yl=Symbol.for("react.fragment");function F(S,x,w){var dl=null;if(w!==void 0&&(dl=""+w),x.key!==void 0&&(dl=""+x.key),"key"in x){w={};for(var ql in x)ql!=="key"&&(w[ql]=x[ql])}else w=x;return x=w.ref,{$$typeof:D,type:S,key:dl,ref:x!==void 0?x:null,props:w}}return oe.Fragment=yl,oe.jsx=F,oe.jsxs=F,oe}var wv;function Dd(){return wv||(wv=1,Wc.exports=Md()),Wc.exports}var uy=Dd();function Ud(){return uy.jsx("div",{children:"App2"})}var $c={exports:{}},me={},kc={exports:{}},Fc={};/**
+ */var Jv;function Md(){if(Jv)return oe;Jv=1;var D=Symbol.for("react.transitional.element"),yl=Symbol.for("react.fragment");function F(S,x,w){var dl=null;if(w!==void 0&&(dl=""+w),x.key!==void 0&&(dl=""+x.key),"key"in x){w={};for(var ql in x)ql!=="key"&&(w[ql]=x[ql])}else w=x;return x=w.ref,{$$typeof:D,type:S,key:dl,ref:x!==void 0?x:null,props:w}}return oe.Fragment=yl,oe.jsx=F,oe.jsxs=F,oe}var wv;function Dd(){return wv||(wv=1,Wc.exports=Md()),Wc.exports}var uy=Dd();function Ud(){return uy.jsx("div",{className:"bg-gray-200",children:"App2"})}var $c={exports:{}},me={},kc={exports:{}},Fc={};/**
  * @license React
  * scheduler.production.js
  *
