@@ -1,10 +1,17 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
+import routes from "./routes";
+
+const router = createBrowserRouter(
+  routes,
+  {
+    basename: "/tekuno-site",
+  }
+);
+
 function App() {
+
   return (
-    <section className="p-2" >
-      <h1 className="font-bold" >
-        作成中
-      </h1>
-    </section>
+    <RouterProvider router={router} />
   );
 }
 

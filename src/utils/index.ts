@@ -1,0 +1,1 @@
+export { useGhPagesRedirect } from './useGhPagesRedirect'
