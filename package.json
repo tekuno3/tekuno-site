@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "publish": "npm run build && gh-pages -d build -m \"Updates --skip-ci\""
+    "publish": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
   },
   "dependencies": {
     "@unocss/reset": "^0.64.0",
