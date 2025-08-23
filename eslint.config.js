@@ -28,6 +28,13 @@ export default tseslint.config(
       semi: ['warn', 'always'],
       quotes: ['warn', 'single', { avoidEscape: true }],
       'jsx-quotes': ['warn', 'prefer-double'],
+      '@typescript-eslint/consistent-type-imports': [
+        'warn',
+        {
+          fixStyle: 'inline-type-imports',
+          prefer: 'type-imports',
+        },
+      ],
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': 'off',
     },

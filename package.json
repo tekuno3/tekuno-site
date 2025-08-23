@@ -10,9 +10,10 @@
     "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\"",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tsc": "tsc -b"
+    "typecheck": "react-router typegen && tsc -b"
   },
   "dependencies": {
+    "@react-router/fs-routes": "^7.8.2",
     "@react-router/node": "^7.8.2",
     "@tailwindcss/vite": "^4.1.11",
     "isbot": "^5",

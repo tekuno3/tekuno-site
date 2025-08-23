@@ -1,0 +1,1 @@
+{"root":["./src/entry.client.tsx","./src/root.tsx","./src/routes.tsx","./src/vite-env.d.ts","./src/routes/$.tsx","./src/routes/_index.tsx","./src/routes/params-test.$testParam.tsx","./src/utils/index.ts","./src/utils/useGhPagesRedirect.ts"],"version":"5.8.3"}

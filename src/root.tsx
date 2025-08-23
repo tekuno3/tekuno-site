@@ -6,9 +6,11 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import stylesheet from './app.css?url';
+import favicon from './images/favicon.png?url';
 
 export const links = () => [
   { rel: 'stylesheet', href: stylesheet, },
+  { rel: 'icon', href: favicon, },
 ];
 
 export function Layout({
@@ -24,8 +26,6 @@ export function Layout({
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         />
-        <link href="./app.css" rel="stylesheet" />
-        <link rel="icon" type="image/png" href="./favicon.png" />
         <title>てく野のサイト</title>
         <Meta />
         <Links />
@@ -44,3 +44,5 @@ export default function Root() {
     <Outlet />
   );
 }
+
+// TODO: hydrateFallback を追加
