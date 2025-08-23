@@ -32,6 +32,10 @@
     },
   },
   "include": [
+    "**/*",
+    "**/.server/**/*",
+    "**/.client/**/*",
+    ".react-router/types/**/*",
     "src",
     /* /tests を使うときはここに追加する */
   ],
