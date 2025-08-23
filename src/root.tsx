@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import stylesheet from './app.css?url';
-import favicon from './images/favicon.png?url';
+import favicon from '/favicon.png?url';
 
 export const links = () => [
   { rel: 'stylesheet', href: stylesheet, },
