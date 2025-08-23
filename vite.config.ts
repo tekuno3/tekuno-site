@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { reactRouter } from '@react-router/dev/vite';
 import tailwindcss from '@tailwindcss/vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/tekuno-site/',
+export default defineConfig(({ mode }) => ({
+  base: '/tekuno-site' + (mode === 'development' ? '' : '/'),
   plugins: [
-    react(),
-    tailwindcss()
+    tailwindcss(),
+    reactRouter(),
+    tsconfigPaths(),
   ],
   server: {
     watch: {
@@ -15,9 +17,4 @@ export default defineConfig({
       interval: 1000
     }
   },
-  resolve: {
-    alias: {
-      '@src': '/src',
-    }
-  }
-});
+}));

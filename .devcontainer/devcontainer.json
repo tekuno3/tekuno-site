@@ -14,9 +14,8 @@
   "mounts": [
     "source=volume-for-tekuno-site-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
-  "onCreateCommand": "npm install && npm install -D",
   "overrideCommand": true,
-  "postCreateCommand": "sh ./.devcontainer/setup.sh",
+  "postCreateCommand": "test -e ./.devcontainer/setup.sh && sh ./.devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [

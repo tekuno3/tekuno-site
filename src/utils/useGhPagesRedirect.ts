@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router";
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router';
 
 /**
  * github pages の 404.html からのリダイレクトを処理するフック
