@@ -1,7 +1,4 @@
-import { useGhPagesRedirect } from '@src/utils';
-
 export default function Index() {
-  useGhPagesRedirect();
 
   return (
     <section className="p-2">
