@@ -29,6 +29,9 @@ export default {
       path.join(distPath, 'index.html'),
       path.join(distPath, '404.html')
     );
+
+    // .nojekyll ファイルを作成
+    await fs.writeFile(path.join(distPath, '.nojekyll'), '');
   },
   ssr: false,
 } satisfies Config;
