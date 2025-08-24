@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\"",
+    "deploy": "npm run build && gh-pages -d dist --dotfiles -m \"Updates --skip-ci\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "react-router typegen && tsc -b"
