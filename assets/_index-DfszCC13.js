@@ -1,1 +1,0 @@
-import{x as s,a as r,w as n,q as a}from"./chunk-PVWAREVJ-DUKP2yhv.js";function c(){const e=s();r.useEffect(()=>{const t=new URLSearchParams(window.location.search).get("redirect");t&&e(t,{replace:!0})},[e])}const p=n(function(){return c(),a.jsx("section",{className:"p-2",children:a.jsx("p",{children:"工事中"})})});export{p as default};
