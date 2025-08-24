@@ -1,6 +1,6 @@
 dist
 node_modules
-.devcontainer/setup.sh
+.devcontainer/*
 .vscode/*
 !.vscode/extensions.json
 .react-router/*
