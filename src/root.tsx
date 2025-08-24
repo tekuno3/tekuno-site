@@ -45,4 +45,8 @@ export default function Root() {
   );
 }
 
-// TODO: hydrateFallback を追加
+export function HydrateFallback() {
+  return (
+    <div>Loading...</div>
+  );
+}
